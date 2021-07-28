@@ -1,0 +1,6 @@
+#!/home/stephens-pc/PycharmProjects/checkoutkata/venv/bin/python
+
+from kata.presentation import cli
+
+if __name__ == '__main__':
+    cli.cli()
