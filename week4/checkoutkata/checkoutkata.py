@@ -17,3 +17,4 @@ def test_discount():
     test.add_item('y', 9)
     test.add_item('tea', 20)
     assert test.discount()
+

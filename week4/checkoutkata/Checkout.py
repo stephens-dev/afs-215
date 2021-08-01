@@ -4,6 +4,8 @@ class Checkout:
         self.price = []
 
     def add_item(self, item, price):
+        if type(price) != int:
+            raise ValueError('Invalid Price')
         self.item.append(item)
         self.price.append(price)
     def cal_total(self):
@@ -18,3 +20,8 @@ class Checkout:
         return total
         dis = total - (total * .10)
         return dis
+
+    # def exception(self):
+    #     if self.price == None:
+    #         raise Exception("Invalid price")
+
